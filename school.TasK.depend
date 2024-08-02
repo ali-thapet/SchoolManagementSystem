@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1709651192 source:e:\embedded course\tools\school.task\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	"school.h"
+
+1709650427 e:\embedded course\tools\school.task\school.h
+	<stdio.h>
+	<stdlib.h>
+
+1709654851 source:e:\embedded course\tools\school.task\school.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	"school.h"
+
+1709768570 source:e:\embedded course\tools\school.project\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	"school.h"
+
+1709768340 e:\embedded course\tools\school.project\school.h
+	<stdio.h>
+	<stdlib.h>
+
+1709766918 source:e:\embedded course\tools\school.project\school.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	"school.h"
+
+1722534093 source:e:\embedded course\tools\projects\school.project\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	<mmsystem.h>
+	"school.h"
+
+1716836693 e:\embedded course\tools\projects\school.project\school.h
+	<stdio.h>
+	<stdlib.h>
+
+1722477321 source:e:\embedded course\tools\projects\school.project\school.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+	"school.h"
+
+1716826434 source:e:\embedded course\tools\projects\school.project\cmd_handler.c
+	"cmd_Handler.h"
+
+1716826666 e:\embedded course\tools\projects\school.project\cmd_handler.h
+	"Utility.h"
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1707746409 e:\embedded course\tools\projects\school.project\utility.h
+	"STD_Types.h"
+	"BIT_Math.h"
+
+1707746531 e:\embedded course\tools\projects\school.project\std_types.h
+
+1707746754 e:\embedded course\tools\projects\school.project\bit_math.h
+
