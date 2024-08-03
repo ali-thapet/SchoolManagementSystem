@@ -250,14 +250,14 @@ void call_student(struct student *ps)
                 printf("calling.....  \n 0%d",ps->phone_number);
                 Sleep(500);
                 x++;
-                clrscr();
+                cmdClearScreen();
 
             }
             printf("\033[0;34m");
            printf("\n **No Answer**\n");
             printf("\033[0m");
             Sleep(1000);
-            clrscr();
+            cmdClearScreen();
 
         }
         else if (i==2)
@@ -277,14 +277,14 @@ void call_student(struct student *ps)
                 printf("calling..... \n 0%d",ps->father.phone);
                 Sleep(500);
                 x++;
-                clrscr();
+                cmdClearScreen();
 
             }
             printf("\033[0;34m");
             printf("\n **No Answer**\n");
             printf("\033[0m");
             Sleep(1000);
-            clrscr();
+            cmdClearScreen();
         }
         else if (i==3)
         {
@@ -303,14 +303,14 @@ void call_student(struct student *ps)
                 printf("calling..... \n 0%d",ps->mother.phone);
                 Sleep(500);
                 x++;
-                clrscr();
+                cmdClearScreen();
 
             }
             printf("\033[0;34m");
             printf("\n **No Answer**\n");
             printf("\033[0m");
             Sleep(1000);
-            clrscr();
+            cmdClearScreen();
         }
         else if(i==4)
         {
@@ -344,7 +344,7 @@ void Edit_student(struct student *ps)
         printf("To edit parents info select \033[0;34m    3 \033[0m \n");
         printf("To go back to main menu select \033[0;34m 4 \033[0m \n");
         scanf("%d",&i);
-        clrscr();
+        cmdClearScreen();
 
         if(i==1)
         {
@@ -381,7 +381,7 @@ void Edit_student(struct student *ps)
                 scanf("%d",&ps->ID);
             }
 
-            clrscr();
+            cmdClearScreen();
 
         }
 
@@ -391,24 +391,24 @@ void Edit_student(struct student *ps)
             printf("To edit subjects name select \033[0;34m      2 \033[0m \n");
             printf("To edit subjects grade select \033[0;34m     3 \033[0m \n");
             scanf("%d",&ch);
-            clrscr();
+            cmdClearScreen();
 
             if (ch==1)
             {
                 printf("To add new subjects in same semester select  \033[0;34m 1 \033[0m \n\n");
                 printf("To add new subjects as a new semester select \033[0;34m 2 \033[0m \n\n");
                 scanf("%d",&ch2);
-                clrscr();
+                cmdClearScreen();
                 if (ch2==1)
                 {
                     printf("Number of subjects you want to add \n");
                     scanf("%d",&n_sub);
                     old_n= ps->numberofsubjects;
-                    clrscr();
+                    cmdClearScreen();
                     printf("Number of total subjects (MAX=7) \n");
                     scanf("%d",&ps->numberofsubjects);
                     ps->subjects=realloc((ps->subjects),ps->numberofsubjects*sizeof(sub_s));
-                    clrscr();
+                    cmdClearScreen();
                     for(j=old_n+1 ; j<=ps->numberofsubjects ; j++)
                     {
                         printf("Subject Name :");
@@ -425,7 +425,7 @@ void Edit_student(struct student *ps)
                 {
                     printf(" Enter the number of semester subjects you want (MAX=7) \n");
                     scanf("%d",&ps->numberofsubjects);
-                    clrscr();
+                    cmdClearScreen();
                     ps->subjects=realloc((ps->subjects),ps->numberofsubjects*sizeof(sub_s));
                     for(j=1; j<= ps->numberofsubjects ; j++)
                     {
@@ -436,7 +436,7 @@ void Edit_student(struct student *ps)
                     }
 
                 }
-                clrscr();
+                cmdClearScreen();
             }
 
             else if (ch==2)
@@ -449,7 +449,7 @@ void Edit_student(struct student *ps)
                     string_print(ps->subjects[j].name);
                     printf("Subject Grade(A,B,C,D,F): %d \n",ps->subjects[j].subgrade);
                 }
-                clrscr();
+                cmdClearScreen();
             }
 
             else if (ch==3)
@@ -463,7 +463,7 @@ void Edit_student(struct student *ps)
                     scanf("%c",&(ps->subjects[j].subgrade));
 
                 }
-                clrscr();
+                cmdClearScreen();
             }
 
         }
@@ -474,7 +474,7 @@ void Edit_student(struct student *ps)
             printf("To edit Mother's name select \033[0;34m 3 \033[0m \n");
             printf("To edit Mother's phone number select \033[0;34m 4 \033[0m \n");
             scanf("%d",&ch);
-            clrscr();
+            cmdClearScreen();
             if (ch==1)
             {
                 printf(" Father Name: ");
@@ -495,7 +495,7 @@ void Edit_student(struct student *ps)
                 printf("Mothers's Phone(11) :");
                 scanf("%d",&ps->mother.phone);
             }
-            clrscr();
+            cmdClearScreen();
         }
         if (i==4)
         {
