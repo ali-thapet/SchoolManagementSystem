@@ -115,8 +115,9 @@ int main()
                 }
                 else
                 {
+                    cmdClearScreen();
                     printf("\033[0;34m");
-                    printf("\nDONE\n");
+                    printf("\nDONE\n\n");
                     printf("\033[0m");
                     Edit_student(&arr[result]);
                 }
